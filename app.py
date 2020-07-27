@@ -48,7 +48,7 @@ def processRequest(req):
 	 
     intent = result.get("intent").get('displayName')
     
-    if (intent=='Intent Pepper'):
+    if (intent=='IntentPepper'):
         prediction = model.predict(final_features)
     
         output = round(prediction[0], 2)
